@@ -66,7 +66,15 @@ Datalog is the language typically used to specify facts, rules and queries in de
 
 What is LogiQL ?
 
+LogiQL is a programming language for accessing logic databases
+
 What does it mean 'join processing strategies' ?
+
+If you are familiar with SQL, you are probably very familiar with using joins between tables in creating SQL queries. A join occurs any time the SQL Server Query Optimizer has to compare two inputs to determine an output. The join can occur between one table and another table, between an index and a table, or between an index and another index (as described previously, in the section, “Index Intersection”).
+
+The SQL Server Query Optimizer uses three primary types of join strategies when it must compare two inputs: nested loops joins, merge joins, and hash joins. The Query Optimizer must consider each one of these algorithms to determine the most appropriate and efficient algorithm for a given situation.
+
+Source: https://www.oreilly.com/library/view/microsoft-sql-server/9780133408539/ch31lev2sec11.html
 
 What does it mean 'purely functional data structures' ?
 
