@@ -81,3 +81,7 @@ What does it mean 'purely functional data structures' ?
 What does it mean 'Incremental Maintenance' ?
 
 What does it mean 'Transaction Repair' ?
+
+Transaction Repair is a method for lock-free, scalable transaction processing that achieves full serializability. It demonstrates parallel speedup even in inimical scenarios where all pairs of transactions have significant read-write conflicts. In the transaction repair approach, each transaction runs in complete isolation in a branch of the database; when conflicts occur, we detect and repair them. These repairs are performed efficiently in parallel, and the net effect is that of serial processing. Within transactions, we use no locks. This frees users from the complications and performance hazards of locks, and from the anomalies of sub-SERIALIZABLE isolation levels.
+
+Source: https://arxiv.org/abs/1403.5645
